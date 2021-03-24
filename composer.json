@@ -1,0 +1,27 @@
+{
+    "name": "seshra/seshra-package-generator",
+    "description": "Seshra Package Generator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rawbinn Shrestha",
+            "email": "contact@rawbinn.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Seshra\\PackageGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Seshra\\PackageGenerator\\Providers\\PackageGeneratorServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
