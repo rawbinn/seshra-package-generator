@@ -2,8 +2,6 @@
 
 namespace Seshra\PackageGenerator\Console\Command;
 
-use Seshra\PackageGenerator\Generators\PackageGenerator;
-
 class AdminControllerMakeCommand extends MakeCommand
 {
     /**
@@ -25,7 +23,7 @@ class AdminControllerMakeCommand extends MakeCommand
      */
     protected function getStubContents()
     {
-        return $this->packageGenerator->getStubContents('admin-controller', $this->getStubVariables());
+        return $this->packageGenerator->getStubContents('controller', $this->getStubVariables());
     }
 
     /**

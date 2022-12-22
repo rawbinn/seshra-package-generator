@@ -8,6 +8,7 @@ use Seshra\PackageGenerator\Console\Command\ProviderMakeCommand;
 use Seshra\PackageGenerator\Console\Command\ModuleProviderMakeCommand;
 use Seshra\PackageGenerator\Console\Command\AdminControllerMakeCommand;
 use Seshra\PackageGenerator\Console\Command\AdminRouteMakeCommand;
+use Seshra\PackageGenerator\Console\Command\MakeControllerCommand;
 use Seshra\PackageGenerator\Console\Command\MigrationMakeCommand;
 use Seshra\PackageGenerator\Console\Command\ModelMakeCommand;
 use Seshra\PackageGenerator\Console\Command\ModelProxyMakeCommand;
@@ -57,6 +58,7 @@ class PackageGeneratorServiceProvider extends ServiceProvider
                 ModuleProviderMakeCommand::class,
                 AdminControllerMakeCommand::class,
                 AdminRouteMakeCommand::class,
+                MakeControllerCommand::class,
                 MigrationMakeCommand::class,
                 ModelMakeCommand::class,
                 ModelProxyMakeCommand::class,
