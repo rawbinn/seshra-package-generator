@@ -22,6 +22,7 @@ use Seshra\PackageGenerator\Console\Command\ListenerMakeCommand;
 use Seshra\PackageGenerator\Console\Command\MiddlewareMakeCommand;
 use Seshra\PackageGenerator\Console\Command\RequestMakeCommand;
 use Seshra\PackageGenerator\Console\Command\NotificationMakeCommand;
+use Seshra\PackageGenerator\Console\Command\ResourceMakeCommand;
 
 class PackageGeneratorServiceProvider extends ServiceProvider
 {
@@ -71,7 +72,8 @@ class PackageGeneratorServiceProvider extends ServiceProvider
                 ListenerMakeCommand::class,
                 MiddlewareMakeCommand::class,
                 RequestMakeCommand::class,
-                NotificationMakeCommand::class
+                NotificationMakeCommand::class,
+                ResourceMakeCommand::class
             ]);
         }
     }
